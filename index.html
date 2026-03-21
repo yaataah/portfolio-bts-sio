@@ -2,155 +2,463 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfolio Dupuis Xavier - BTS SIO SLAM</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-<header>
-    <h1 id="goHome">BTS SIO 2026</h1>
-
-    <nav>
-        <button data-tab="accueil" class="active">Accueil</button>
-        <button data-tab="profil">Profil</button>
-        <button data-tab="competences">Compétences</button>
-        <button data-tab="projets">Projets</button>
-        <button data-tab="certifications">Certifications</button>
-        <button data-tab="veille">Veille</button>
-    </nav>
-
-    <button id="darkModeToggle">🌙</button>
-</header>
-
-<main>
-
-<!-- ACCUEIL -->
-<section id="accueil" class="active">
-    <div class="profile-pic"></div>
-
-    <h2>Je m'appelle Dupuis Xavier</h2>
-
-    <p>
-        Étudiant en BTS SIO SLAM, passionné par le développement d'applications web et desktop.
-    </p>
-
-    <button onclick="goTo('projets')">Voir mes projets</button>
-</section>
-
-<!-- PROFIL -->
-<section id="profil">
-    <h2>Profil</h2>
-    <p>
-        Étudiant en BTS SIO option SLAM, je me spécialise dans le développement d’applications et la création de solutions informatiques adaptées aux besoins des utilisateurs.
-    </p>
-</section>
-
-<!-- COMPETENCES -->
-<section id="competences">
-    <h2>Compétences</h2>
-
-    <ul>
-        <li>Java / JavaFX</li>
-        <li>PHP / MySQL</li>
-        <li>HTML / CSS / JS</li>
-        <li>Git / GitHub</li>
-        <li>MVC / DAO / CRUD</li>
-    </ul>
-</section>
-
-<!-- PROJETS -->
-<section id="projets">
-    <h2>Mes projets</h2>
-
-    <!-- RDV -->
-    <div class="project">
-        <h3>Application de gestion de rendez-vous</h3>
-        <p>Application desktop JavaFX avec gestion clients et planning.</p>
-
-        <a href="https://github.com/yaataah/GestionnaireRDV" target="_blank">
-            Voir sur GitHub
-        </a>
+    <div class="waves-background">
+        <svg viewBox="0 0 1440 320">
+            <path fill="#2fa9a7" fill-opacity="0.3"
+                d="M0,64L48,74.7C96,85,192,107,288,128C384,149,480,171,576,186.7C672,203,768,213,864,197.3C960,181,1056,139,1152,128C1248,117,1344,139,1392,149.3L1440,160L1440,320L0,320Z">
+            </path>
+        </svg>
     </div>
 
-    <!-- CHAT -->
-    <div class="project">
-        <h3>Application de chat</h3>
-        <p>Application web en PHP avec système de messagerie et gestion utilisateurs.</p>
-
-        <a href="https://github.com/yaataah/ChatBtsSio2026" target="_blank">
-            Voir sur GitHub
-        </a>
-    </div>
-</section>
-
-<!-- CERTIFICATIONS -->
-<section id="certifications">
-    <h2>Certifications</h2>
-
-    <div class="cert-container">
-
-        <div class="cert-card">
-            <h3>MOOC ANSSI</h3>
-            <img src="MOOC.png">
+    <header>
+        <div class="home-group">
+            <h1 id="goHome">BTS SIO 2026</h1>
+            <a href="https://www.sqits.net" target="_blank" rel="noopener">
+                <img src="Squarenv.png" alt="Logo square" style="width:50px;">
+            </a>
         </div>
 
-        <div class="cert-card">
-            <h3>Cisco - Introduction à la cybersécurité</h3>
-            <p>Certification Cisco Networking Academy</p>
-            <img src="certifcisco.png">
+        <div class="header-right">
+            <nav>
+                <button class="active" data-tab="accueil">Accueil</button>
+                <button data-tab="profil">Profil</button>
+                <button data-tab="competences">Compétences</button>
+                <button data-tab="projets">Projets</button>
+                <button data-tab="certifications">Certifications</button>
+                <button data-tab="entreprise">Entreprise</button>
+                <button data-tab="bts-sio">BTS SIO</button>
+                <button data-tab="synthese">E6</button>
+                <button data-tab="veille">Veille</button>
+            </nav>
+            <button class="toggle-darkmode" id="darkModeToggle">🌙 Dark Mode</button>
         </div>
+    </header>
 
-    </div>
-</section>
+    <main>
+        <section id="accueil" class="active" data-tab="accueil">
+            <div class="accueil-container">
+                <div class="accueil-text">
+                    <div class="profile-pic"></div>
 
-<!-- VEILLE -->
-<section id="veille">
-    <h2>Veille technologique</h2>
+                    <p class="typewriter">
+                        <strong>Je m'appelle Dupuis Xavier, étudiant en BTS SIO SLAM.</strong>
+                    </p>
 
-    <p>
-        Thème : UX et ergonomie dans les applications
-    </p>
+                    <p class="hero-text">
+                        Passionné par le développement d’applications, le web et l’informatique, je construis ce
+                        portfolio pour présenter mon parcours, mes compétences, mes projets réalisés en formation ainsi
+                        que ma veille technologique.
+                    </p>
 
-    <div class="grid">
+                    <div class="btn-row">
+                        <button class="btn-decouvrir" id="btnDecouvrir">Découvrir mes projets</button>
+                        <button class="btn-outline" id="btnProfil">Voir mon profil</button>
+                        <button class="btn-outline" id="btnDecouvrirBTS">Découvrir le BTS SIO</button>
+                    </div>
+                </div>
 
-        <div class="card">
-            <h3>Objectif</h3>
-            <p>Comprendre l’importance de l’expérience utilisateur.</p>
-        </div>
+                <a href="https://www.sqits.net" target="_blank" rel="noopener">
+                    <img class="accueil-logo" src="Squarenv.png" alt="Logo square">
+                </a>
+            </div>
+        </section>
 
-        <div class="card">
-            <h3>Pourquoi</h3>
-            <p>Une application doit être intuitive et agréable.</p>
-        </div>
+        <section id="profil" data-tab="profil">
+            <h2 class="section-title"> À propos de moi</h2>
+            <p class="section-subtitle">
+                Cette section présente mon profil, mon parcours et mon projet professionnel dans le cadre de mon BTS
+                SIO option SLAM.
+            </p>
 
-        <div class="card">
-            <h3>Apprentissage</h3>
-            <ul>
-                <li>Simplicité</li>
-                <li>Navigation claire</li>
-                <li>Feedback utilisateur</li>
-            </ul>
-        </div>
+            <div class="grid-2">
+                <div class="info-card">
+                    <h3>Présentation</h3>
+                    <p>
+                        Je suis Dupuis Xavier, étudiant en BTS SIO option SLAM. Je m’intéresse particulièrement au
+                        développement d’applications, à la conception de solutions métiers et à l’amélioration de
+                        l’expérience utilisateur.
+                    </p>
+                </div>
 
-        <div class="card">
-            <h3>Application</h3>
-            <ul>
-                <li>ComboBox / DatePicker</li>
-                <li>Interface claire</li>
-            </ul>
-        </div>
+                <div class="info-card">
+                    <h3>Projet professionnel</h3>
+                    <p>
+                        Mon objectif est d’évoluer vers un métier de développeur full-stack, avec une forte appétence
+                        pour les projets web, les applications métiers et les outils utiles aux entreprises.
+                    </p>
+                </div>
 
-    </div>
-</section>
+                <div class="info-card">
+                    <h3>Qualités</h3>
+                    <ul style="margin-left: 1.2rem;">
+                        <li>Rigueur</li>
+                        <li>Curiosité</li>
+                        <li>Capacité d’adaptation</li>
+                        <li>Volonté de progresser rapidement</li>
+                    </ul>
+                </div>
 
-</main>
+                <div class="info-card">
+                    <h3>Ce que montre ce portfolio</h3>
+                    <p>
+                        Ce portfolio rassemble mes projets réalisés durant le BTS, mes compétences techniques, mes
+                        certifications, ma veille technologique et mon environnement professionnel.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-<script src="script.js"></script>
+        <section id="competences" data-tab="competences">
+            <h2 class="section-title"> Compétences</h2>
+            <p class="section-subtitle">
+                Voici un aperçu de mes compétences techniques et méthodologiques développées durant ma formation et mes
+                projets.
+            </p>
 
+            <div class="grid-3">
+                <div class="skill-card">
+                    <h3>Langages</h3>
+                    <div class="tag-list">
+                        <span class="tag">Java</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Frameworks / outils</h3>
+                    <div class="tag-list">
+                        <span class="tag">JavaFX</span>
+                        <span class="tag">JDBC</span>
+                        <span class="tag">SQLite</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">Git</span>
+                        <span class="tag">GitHub</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Méthodes / concepts</h3>
+                    <div class="tag-list">
+                        <span class="tag">MVC</span>
+                        <span class="tag">CRUD</span>
+                        <span class="tag">DAO</span>
+                        <span class="tag">Base de données</span>
+                        <span class="tag">Débogage</span>
+                        <span class="tag">UX</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets" data-tab="projets">
+            <h2 class="section-title"> Mes projets</h2>
+            <p class="section-subtitle">
+                Les deux projets ci-dessous sont les projets principaux que je présente dans le cadre de l’épreuve E6
+                du BTS SIO option SLAM.
+            </p>
+
+            <div class="cards-container stretch">
+                <div class="project-card full-width">
+                    <div class="project-header">
+                        <div>
+                            <h3> Application de gestion de rendez-vous</h3>
+                            <p><strong>Type :</strong> Application lourde / desktop</p>
+                        </div>
+                        <span class="project-badge">JavaFX</span>
+                    </div>
+
+                    <p>
+                        Ce projet a pour objectif de permettre à un professionnel de gérer simplement ses clients et
+                        leurs rendez-vous à partir d’une application locale claire, fluide et structurée.
+                    </p>
+
+                    <ul>
+                        <li>Gestion complète des clients : ajout, modification, suppression, recherche</li>
+                        <li>Gestion des rendez-vous : ajout, modification, suppression, filtrage par date</li>
+                        <li>Détection de conflits horaires pour éviter les doubles réservations</li>
+                        <li>Affichage plus ergonomique avec DatePicker, ComboBox et planning journalier</li>
+                        <li>Interface améliorée avec JavaFX et CSS</li>
+                    </ul>
+
+                    <div class="tag-list">
+                        <span class="tag">Java</span>
+                        <span class="tag">JavaFX</span>
+                        <span class="tag">SQLite</span>
+                        <span class="tag">JDBC</span>
+                        <span class="tag">MVC</span>
+                        <span class="tag">DAO</span>
+                    </div>
+
+                    <div class="screenshot-box">
+                        <strong>Captures à ajouter ici :</strong><br>
+                        - écran gestion des clients<br>
+                        - écran planning des rendez-vous<br>
+                        - exemple d’ajout de rendez-vous<br>
+                        - exemple de conflit horaire
+                    </div>
+
+                    <div class="project-actions">
+                        <a href="https://github.com/yaataah/GestionnaireRDV" target="_blank" rel="noopener" class="btn-outline">Voir le code GitHub</a>
+                        <a href="#" class="btn-outline">Démo / documentation à ajouter</a>
+                    </div>
+                </div>
+
+                <div class="project-card full-width">
+                    <div class="project-header">
+                        <div>
+                            <h3> Application de chat</h3>
+                            <p><strong>Type :</strong> Application web</p>
+                        </div>
+                        <span class="project-badge">PHP / MySQL</span>
+                    </div>
+
+                    <p>
+                        Ce projet consiste à développer une application de messagerie en ligne permettant aux
+                        utilisateurs de s’inscrire, de se connecter, d’échanger des messages et à un administrateur de
+                        gérer les utilisateurs.
+                    </p>
+
+                    <ul>
+                        <li>Inscription / connexion / déconnexion</li>
+                        <li>Envoi et réception de messages</li>
+                        <li>Gestion des comptes utilisateurs</li>
+                        <li>Espace administrateur pour gérer les utilisateurs</li>
+                        <li>Correction et stabilisation du panneau d’administration</li>
+                    </ul>
+
+                    <div class="tag-list">
+                        <span class="tag">PHP</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Sessions</span>
+                    </div>
+
+                    <div class="screenshot-box">
+                        <strong>Captures à ajouter ici :</strong><br>
+                        - page de connexion<br>
+                        - interface de chat<br>
+                        - panneau administrateur<br>
+                        - gestion des utilisateurs
+                    </div>
+
+                    <div class="project-actions">
+                        <a href="https://github.com/yaataah/ChatBtsSio2026" target="_blank" rel="noopener" class="btn-outline">Voir le code GitHub</a>
+                        <a href="#" class="btn-outline">URL démo à ajouter</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" data-tab="certifications">
+            <h2 class="section-title">🎓 Certifications</h2>
+            <p class="section-subtitle">
+                Cette section met en avant les certifications et formations complémentaires obtenues durant ma montée en
+                compétences.
+            </p>
+
+            <div class="grid-2">
+                <div class="cert-card">
+                    <h3>MOOC ANSSI</h3>
+                    <p>
+                        Formation portant sur les bases de la sécurité des systèmes d’information, les bonnes pratiques
+                        et les risques liés à la cybersécurité.
+                    </p>
+                    <img src="MOOC.png" alt="Certificat MOOC ANSSI">
+                </div>
+
+                <div class="cert-card">
+                    <h3>Cisco - Introduction à la cybersécurité</h3>
+                    <p>
+                        Certification Cisco Networking Academy obtenue dans le cadre de la découverte
+                        des bases de la cybersécurité.
+                    </p>
+                    <p style="margin-top: .8rem;">
+                        <strong>Date d’achèvement :</strong> 20 mars 2026
+                    </p>
+                    <img src="cisco-certif.png" alt="Certification Cisco Introduction à la cybersécurité">
+                </div>
+            </div>
+        </section>
+
+        <section id="entreprise" data-tab="entreprise">
+            <img class="entreprise-title" src="Squarenv.png" alt="Logo Square IT Services">
+            <h2 class="section-title section-no-top"> Mon entreprise</h2>
+            <p class="section-subtitle">
+                Présentation de l’environnement professionnel dans lequel j’évolue.
+            </p>
+
+            <div class="info-card">
+                <p><strong>Nom :</strong> Square IT Services</p><br>
+                <p><strong>Localisation :</strong> Asnières-sur-Seine (92) – 25–29 quai Aulagnier</p><br>
+                <p><strong>Statut :</strong> SAS fondée en 2006 – Conseil en systèmes et logiciels informatiques</p><br>
+                <p><strong>Taille :</strong> Environ 50 à 100 collaborateurs</p><br>
+                <p><strong>Domaines :</strong> Développement d'applications, intégration, gestion de projet</p><br>
+                <p><strong>Partenaires :</strong> TIBCO, Denodo, Workato</p><br>
+                <p><strong>Culture :</strong> Ambiance conviviale, montée en compétences, agilité</p><br>
+                <p>
+                    Square IT Services est une société de conseil informatique spécialisée dans l’intégration de
+                    solutions innovantes. Elle accompagne ses clients dans des projets de transformation numérique, avec
+                    un fort enjeu d’efficacité, de connectivité et d’automatisation.
+                </p>
+            </div>
+        </section>
+
+        <section id="bts-sio" data-tab="bts-sio">
+            <h2 class="section-title"> Découvrir le BTS SIO</h2>
+            <p class="section-subtitle">
+                Le BTS Services Informatiques aux Organisations prépare aux métiers de l’informatique avec deux
+                spécialités complémentaires.
+            </p>
+
+            <div class="cards-container">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="f2idark.png" alt="SLAM" class="sio-logo">
+                            <span class="sio-option">Option SLAM</span>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Option SLAM</h3>
+                            <p>Développement d'applications web et desktop, programmation, gestion des bases de
+                                données, conception et maintenance de solutions logicielles.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="f2idark.png" alt="SISR" class="sio-logo">
+                            <span class="sio-option">Option SISR</span>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Option SISR</h3>
+                            <p>Administration des réseaux, infrastructures, cybersécurité, support et maintenance des
+                                services informatiques.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="synthese" data-tab="synthese">
+            <h2 class="section-title"> Tableau de synthèse</h2>
+            <p class="section-subtitle">
+                Cette partie permet au jury de retrouver rapidement les activités menées, les compétences mobilisées et
+                les projets associés à l’épreuve E6.
+            </p>
+
+            <div class="synthese-card">
+                <h3>À ajouter</h3>
+                <p>Tu pourras insérer ici ton tableau de synthèse au format :</p>
+                <ul style="margin: .8rem 0 0 1.2rem; line-height: 1.8;">
+                    <li>PDF téléchargeable</li>
+                    <li>Image intégrée dans la page</li>
+                    <li>Lien vers un document hébergé</li>
+                </ul>
+
+                <div class="project-actions">
+                    <a href="#" class="btn-outline">Ajouter le tableau de synthèse</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="veille" data-tab="veille">
+            <h2 class="section-title"> Veille technologique</h2>
+
+            <p class="section-subtitle">
+                Thème : L’importance de l’UX et de l’ergonomie dans les applications web et desktop
+            </p>
+
+            <div class="grid-2">
+
+                <div class="info-card">
+                    <h3> Objectif de la veille</h3>
+                    <p>
+                        Cette veille a pour objectif de comprendre l’importance de l’expérience utilisateur (UX)
+                        dans la conception d’applications web et desktop.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3> Pourquoi ce sujet ?</h3>
+                    <p>
+                        Lors de mes projets, j’ai constaté qu’une application fonctionnelle ne suffit pas :
+                        elle doit aussi être intuitive, claire, agréable à utiliser et adaptée aux besoins de l’utilisateur.
+                    </p>
+                </div>
+
+                <div class="info-card">
+                    <h3> Ce que j’ai appris</h3>
+                    <ul style="margin-left: 1.2rem; line-height: 1.8;">
+                        <li>Importance de la simplicité visuelle</li>
+                        <li>Navigation claire et logique</li>
+                        <li>Feedback utilisateur (messages d’erreur, confirmations)</li>
+                        <li>Réduction des actions inutiles</li>
+                        <li>Meilleure lisibilité des informations</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3> Application dans mes projets</h3>
+                    <ul style="margin-left: 1.2rem; line-height: 1.8;">
+                        <li>Utilisation de DatePicker et ComboBox dans l’application de rendez-vous</li>
+                        <li>Amélioration de la navigation entre les écrans</li>
+                        <li>Affichage plus lisible du planning</li>
+                        <li>Interface plus claire pour l’application de chat</li>
+                        <li>Ajout d’un panneau administrateur simple et accessible</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3> Méthode de veille</h3>
+                    <ul style="margin-left: 1.2rem; line-height: 1.8;">
+                        <li>Consultation d’articles spécialisés sur l’UX/UI</li>
+                        <li>Ressources pédagogiques OpenClassrooms</li>
+                        <li>Vidéos YouTube orientées développement et ergonomie</li>
+                        <li>Documentation officielle des outils utilisés</li>
+                        <li>Observation et amélioration de mes propres projets</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3> Conclusion</h3>
+                    <p>
+                        L’UX et l’ergonomie sont aujourd’hui essentielles dans le développement d’applications.
+                        Une application bien conçue ne doit pas seulement fonctionner : elle doit aussi être simple,
+                        efficace et agréable à utiliser pour répondre correctement aux besoins des utilisateurs.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        © 2026 Dupuis Xavier - BTS SIO SLAM |
+        <a href="mailto:dupuis.xavier@example.com">Mail</a> |
+        <a href="https://www.linkedin.com/in/xavier-dupuis-659459205/" target="_blank" rel="noopener">LinkedIn</a> |
+        <a href="#" onclick="alert('Formulaire de contact à ajouter si nécessaire.')">Contact</a> |
+        <a href="#" onclick="alert('Mentions légales : Portfolio étudiant BTS SIO SLAM.')">Mentions légales</a>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
