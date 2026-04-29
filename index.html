@@ -31,11 +31,9 @@
             <nav>
                 <button class="active" data-tab="accueil">Accueil</button>
                 <button data-tab="profil">CV</button>
-                <button data-tab="competences">Compétences</button>
                 <button data-tab="projets">Projets</button>
                 <button data-tab="certifications">Certifications</button>
                 <button data-tab="entreprise">Entreprise</button>
-                <button data-tab="bts-sio">BTS SIO</button>
                 <button data-tab="synthese">E6</button>
                 <button data-tab="veille">Veille</button>
             </nav>
@@ -50,23 +48,22 @@
                     <div class="profile-pic"></div>
 
                     <p class="typewriter">
-                        <strong>Bienvenue sur mon portfolio,  je suis Dupuis Xavier | étudiant en BTS SIO SLAM.</strong>
+                        <strong>Bienvenue sur mon portfolio, je suis Dupuis Xavier | étudiant en BTS SIO SLAM.</strong>
                     </p>
 
                     <p class="hero-text">
-                        Passionné par le développement d’applications, le web et l’informatique, je construis ce
-                        portfolio pour présenter mon parcours, mes compétences, mes projets réalisés en formation ainsi
+                        je construis ce portfolio pour présenter mon parcours, mes compétences, mes projets réalisés en
+                        formation ainsi
                         que ma veille technologique.
                     </p>
 
                     <div class="btn-row">
                         <button class="btn-decouvrir" id="btnDecouvrir">Découvrir mes projets</button>
                         <button class="btn-outline" id="btnProfil">Voir mon profil</button>
-                        <button class="btn-outline" id="btnDecouvrirBTS">Découvrir le BTS SIO</button>
                     </div>
                 </div>
 
-               
+
             </div>
         </section>
 
@@ -77,31 +74,34 @@
                 SIO option SLAM.
             </p>
 
-            <div class="grid-2">
+            <div class="grid-2" style="margin-bottom:1.2rem;">
                 <div class="info-card">
                     <h3>Présentation</h3>
                     <p>
-                        Je suis Dupuis Xavier, étudiant en BTS SIO option SLAM. Je m’intéresse particulièrement au
-                        développement d’applications, à la conception de solutions métiers et à l’amélioration de
-                        l’expérience utilisateur.
+                        Je suis Dupuis Xavier, étudiant en BTS SIO option SLAM. Je m'intéresse particulièrement au
+                        développement d'applications, à la conception de solutions métiers et à l'amélioration de
+                        l'expérience utilisateur.
                     </p>
                 </div>
 
                 <div class="info-card">
                     <h3>Projet professionnel</h3>
                     <p>
-                        Mon objectif est d’évoluer vers un métier de développeur full-stack, avec une forte appétence
+                        Mon objectif est d'évoluer vers un métier de développeur full-stack, avec une forte appétence
                         pour les projets web, les applications métiers et les outils utiles aux entreprises.
                     </p>
                 </div>
+            </div>
 
+            <div class="grid-2">
                 <div class="info-card">
                     <h3>Qualités</h3>
-                    <ul style="margin-left: 1.2rem;">
+                    <ul style="margin-left: 1.2rem; line-height:1.9;">
+                        <li>Esprit d'équipe</li>
                         <li>Rigueur</li>
-                        <li>Curiosité</li>
-                        <li>Capacité d’adaptation</li>
-                        <li>Volonté de progresser rapidement</li>
+                        <li>Proactivité</li>
+                        <li>Sens du service</li>
+                        <li>Capacité d'adaptation</li>
                     </ul>
                 </div>
 
@@ -111,7 +111,6 @@
                         Ce portfolio rassemble mes projets réalisés durant le BTS, mes compétences techniques, mes
                         certifications, ma veille technologique et mon environnement professionnel.
                     </p>
-
                     <div style="margin-top: 1.2rem;">
                         <a href="CV.pdf" target="_blank" rel="noopener" class="btn-outline">
                             Voir mon CV
@@ -119,16 +118,10 @@
                     </div>
                 </div>
             </div>
-        </section>
 
-        <section id="competences" data-tab="competences">
-            <h2 class="section-title"> Compétences</h2>
-            <p class="section-subtitle">
-                Voici un aperçu de mes compétences techniques et méthodologiques développées durant ma formation et mes
-                projets.
-            </p>
-
-            <div class="grid-3">
+            <!-- Compétences techniques -->
+            <h3 style="color:var(--primary); font-size:1.3rem; margin: 1.5rem 0 .8rem;"> Compétences techniques</h3>
+            <div class="grid-3" style="margin-bottom:.8rem;">
                 <div class="skill-card">
                     <h3>Langages</h3>
                     <div class="tag-list">
@@ -142,7 +135,7 @@
                 </div>
 
                 <div class="skill-card">
-                    <h3>Frameworks / outils</h3>
+                    <h3>Frameworks / Outils</h3>
                     <div class="tag-list">
                         <span class="tag">JavaFX</span>
                         <span class="tag">JDBC</span>
@@ -150,11 +143,14 @@
                         <span class="tag">MySQL</span>
                         <span class="tag">Git</span>
                         <span class="tag">GitHub</span>
+                        <span class="tag">Jira</span>
+                        <span class="tag">Intune</span>
+                        <span class="tag">VS Code</span>
                     </div>
                 </div>
 
                 <div class="skill-card">
-                    <h3>Méthodes / concepts</h3>
+                    <h3>Méthodes / Concepts</h3>
                     <div class="tag-list">
                         <span class="tag">MVC</span>
                         <span class="tag">CRUD</span>
@@ -162,6 +158,7 @@
                         <span class="tag">Base de données</span>
                         <span class="tag">Débogage</span>
                         <span class="tag">UX</span>
+                        <span class="tag">Support IT</span>
                     </div>
                 </div>
             </div>
@@ -178,7 +175,7 @@
                 <div class="project-card full-width">
                     <div class="project-header">
                         <div>
-                            <h3> Application de gestion de rendez-vous</h3>
+                            <h3>Application de gestion de rendez-vous</h3>
                             <p><strong>Type :</strong> Application lourde / desktop</p>
                         </div>
                         <span class="project-badge">JavaFX</span>
@@ -206,13 +203,7 @@
                         <span class="tag">DAO</span>
                     </div>
 
-                    <div class="screenshot-box">
-                        <strong>Captures à ajouter ici :</strong><br>
-                        - écran gestion des clients<br>
-                        - écran planning des rendez-vous<br>
-                        - exemple d’ajout de rendez-vous<br>
-                        - exemple de conflit horaire
-                    </div>
+
 
                     <div class="project-actions">
                         <a href="https://github.com/yaataah/GestionnaireRDV" target="_blank" rel="noopener"
@@ -224,7 +215,7 @@
                 <div class="project-card full-width">
                     <div class="project-header">
                         <div>
-                            <h3> Application de chat</h3>
+                            <h3>Application de chat</h3>
                             <p><strong>Type :</strong> Application web</p>
                         </div>
                         <span class="project-badge">PHP / MySQL</span>
@@ -253,25 +244,20 @@
                         <span class="tag">Sessions</span>
                     </div>
 
-                    <div class="screenshot-box">
-                        <strong>Captures à ajouter ici :</strong><br>
-                        - page de connexion<br>
-                        - interface de chat<br>
-                        - panneau administrateur<br>
-                        - gestion des utilisateurs
-                    </div>
 
-                    <div class="project-actions">
-                        <a href="https://github.com/yaataah/ChatBtsSio2026" target="_blank" rel="noopener"
-                            class="btn-outline">Voir le code GitHub</a>
-                        <a href="#" class="btn-outline">URL démo à ajouter</a>
-                    </div>
                 </div>
+
+                <div class="project-actions">
+                    <a href="https://github.com/yaataah/ChatBtsSio2026" target="_blank" rel="noopener"
+                        class="btn-outline">Voir le code GitHub</a>
+                    <a href="#" class="btn-outline">URL démo à ajouter</a>
+                </div>
+            </div>
             </div>
         </section>
 
         <section id="certifications" data-tab="certifications">
-            <h2 class="section-title">🎓 Certifications</h2>
+            <h2 class="section-title"> Certifications</h2>
             <p class="section-subtitle">
                 Cette section met en avant les certifications et formations complémentaires obtenues durant ma montée en
                 compétences.
@@ -324,44 +310,6 @@
             </div>
         </section>
 
-        <section id="bts-sio" data-tab="bts-sio">
-            <h2 class="section-title"> Découvrir le BTS SIO</h2>
-            <p class="section-subtitle">
-                Le BTS Services Informatiques aux Organisations prépare aux métiers de l’informatique avec deux
-                spécialités complémentaires.
-            </p>
-
-            <div class="cards-container">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="f2idark.png" alt="SLAM" class="sio-logo">
-                            <span class="sio-option">Option SLAM</span>
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>Option SLAM</h3>
-                            <p>Développement d'applications web et desktop, programmation, gestion des bases de
-                                données, conception et maintenance de solutions logicielles.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="f2idark.png" alt="SISR" class="sio-logo">
-                            <span class="sio-option">Option SISR</span>
-                        </div>
-                        <div class="flip-card-back">
-                            <h3>Option SISR</h3>
-                            <p>Administration des réseaux, infrastructures, cybersécurité, support et maintenance des
-                                services informatiques.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section id="synthese" data-tab="synthese">
             <h2 class="section-title"> Tableau de synthèse</h2>
             <p class="section-subtitle">
@@ -388,79 +336,198 @@
 
         <section id="veille" data-tab="veille">
             <h2 class="section-title"> Veille technologique</h2>
-
             <p class="section-subtitle">
-                Thème : L’importance de l’UX et de l’ergonomie dans les applications web et desktop
+                Thème : L'importance de l'UX et de l'ergonomie dans les applications web et desktop
             </p>
 
-            <div class="grid-2">
-
+            <!-- Ligne 1 : Objectif + Pourquoi -->
+            <div class="grid-2" style="margin-bottom:1.2rem;">
                 <div class="info-card">
-                    <h3> Objectif de la veille</h3>
+                    <h3>Objectif de la veille</h3>
                     <p>
-                        Cette veille a pour objectif de comprendre l’importance de l’expérience utilisateur (UX)
-                        dans la conception d’applications web et desktop.
+                        Cette veille a pour objectif de comprendre l'importance de l'expérience utilisateur (UX)
+                        dans la conception d'applications web et desktop. L'UX est devenue un critère clé dans
+                        l'évaluation de la qualité d'un logiciel, au même titre que ses fonctionnalités techniques.
                     </p>
                 </div>
 
                 <div class="info-card">
-                    <h3> Pourquoi ce sujet ?</h3>
+                    <h3>Pourquoi ce sujet ?</h3>
                     <p>
-                        Lors de mes projets, j’ai constaté qu’une application fonctionnelle ne suffit pas :
-                        elle doit aussi être intuitive, claire, agréable à utiliser et adaptée aux besoins de
-                        l’utilisateur.
+                        Lors de mes projets, j'ai constaté qu'une application fonctionnelle ne suffit pas :
+                        elle doit aussi être intuitive, claire et agréable à utiliser.
+                        Une mauvaise ergonomie génère de la frustration, des erreurs utilisateurs et un abandon
+                        plus rapide de l'outil. C'est ce constat qui m'a motivé à approfondir ce sujet.
                     </p>
                 </div>
-
-                <div class="info-card">
-                    <h3> Ce que j’ai appris</h3>
-                    <ul style="margin-left: 1.2rem; line-height: 1.8;">
-                        <li>Importance de la simplicité visuelle</li>
-                        <li>Navigation claire et logique</li>
-                        <li>Feedback utilisateur (messages d’erreur, confirmations)</li>
-                        <li>Réduction des actions inutiles</li>
-                        <li>Meilleure lisibilité des informations</li>
-                    </ul>
-                </div>
-
-                <div class="info-card">
-                    <h3> Application dans mes projets</h3>
-                    <ul style="margin-left: 1.2rem; line-height: 1.8;">
-                        <li>Utilisation de DatePicker et ComboBox dans l’application de rendez-vous</li>
-                        <li>Amélioration de la navigation entre les écrans</li>
-                        <li>Affichage plus lisible du planning</li>
-                        <li>Interface plus claire pour l’application de chat</li>
-                        <li>Ajout d’un panneau administrateur simple et accessible</li>
-                    </ul>
-                </div>
-
-                <div class="info-card">
-                    <h3> Méthode de veille</h3>
-                    <ul style="margin-left: 1.2rem; line-height: 1.8;">
-                        <li>Consultation d’articles spécialisés sur l’UX/UI</li>
-                        <li>Ressources pédagogiques OpenClassrooms</li>
-                        <li>Vidéos YouTube orientées développement et ergonomie</li>
-                        <li>Documentation officielle des outils utilisés</li>
-                        <li>Observation et amélioration de mes propres projets</li>
-                    </ul>
-                </div>
-
-                <div class="info-card">
-                    <h3> Conclusion</h3>
-                    <p>
-                        L’UX et l’ergonomie sont aujourd’hui essentielles dans le développement d’applications.
-                        Une application bien conçue ne doit pas seulement fonctionner : elle doit aussi être simple,
-                        efficace et agréable à utiliser pour répondre correctement aux besoins des utilisateurs.
-                    </p>
-                </div>
-
             </div>
+
+            <!-- Ligne 2 : Ce que j'ai appris + Principes clés -->
+            <div class="grid-2" style="margin-bottom:1.2rem;">
+                <div class="info-card">
+                    <h3>Ce que j'ai appris</h3>
+                    <ul style="margin-left: 1.2rem; line-height: 1.9;">
+                        <li><strong>Loi de Fitts</strong> – les éléments cliquables doivent être grands et accessibles
+                        </li>
+                        <li><strong>Loi de Miller</strong> – l'esprit humain traite en moyenne 7 éléments à la fois</li>
+                        <li><strong>Design centré utilisateur</strong> – concevoir pour le besoin réel, pas pour la
+                            technique</li>
+                        <li><strong>Hiérarchie visuelle</strong> – guider l'œil vers l'information importante</li>
+                        <li><strong>Feedback utilisateur</strong> – confirmations, alertes, messages d'erreur explicites
+                        </li>
+                        <li><strong>Accessibilité (a11y)</strong> – contraste, navigation clavier, taille de texte</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>Application dans mes projets</h3>
+                    <ul style="margin-left: 1.2rem; line-height: 1.9;">
+                        <li>Utilisation de <strong>DatePicker</strong> et <strong>ComboBox</strong> dans l'app de
+                            rendez-vous JavaFX</li>
+                        <li>Amélioration de la navigation entre les écrans (flux logique)</li>
+                        <li>Affichage plus lisible du planning (tableau, couleurs, tri)</li>
+                        <li>Interface épurée pour l'application de chat PHP</li>
+                        <li>Panneau administrateur simple avec accès rapide aux fonctions clés</li>
+                        <li>Responsive design sur le portfolio (adaptation mobile / desktop)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Ligne 3 : Tendances actuelles -->
+            <div class="info-card" style="margin-bottom:1.2rem;">
+                <h3>Tendances UX actuelles (2025–2026)</h3>
+                <div class="grid-3" style="margin-top:.8rem;">
+                    <div>
+                        <strong> IA et UX</strong>
+                        <p style="line-height:1.7; margin-top:.4rem;">Les interfaces intègrent de plus en plus l'IA
+                            (suggestions automatiques, remplissage intelligent, chatbots intégrés) pour fluidifier
+                            l'expérience.</p>
+                    </div>
+                    <div>
+                        <strong>Dark Mode & accessibilité</strong>
+                        <p style="line-height:1.7; margin-top:.4rem;">Le mode sombre est devenu un standard attendu.
+                            L'accessibilité est désormais une priorité dans la conception d'interfaces modernes.</p>
+                    </div>
+                    <div>
+                        <strong> Mobile-first</strong>
+                        <p style="line-height:1.7; margin-top:.4rem;">Plus de 60% du trafic web vient du mobile.
+                            Concevoir en priorité pour les petits écrans est désormais une règle fondamentale du design
+                            web.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ligne 4 : Méthode + Sources -->
+            <div class="grid-2" style="margin-bottom:1.2rem;">
+                <div class="info-card">
+                    <h3>Méthode de veille</h3>
+                    <ul style="margin-left: 1.2rem; line-height: 1.9;">
+                        <li>Visionnage de vidéos sur la chaîne YouTube <strong>Grafikart</strong> (développement web,
+                            UI/UX, bonnes pratiques)</li>
+                        <li>Consultation régulière de sites spécialisés français (UX Republic, Alsacréations)</li>
+                        <li>Lecture d'articles internationaux (Nielsen Norman Group, Smashing Magazine)</li>
+                        <li>Suivi de la formation <strong>OpenClassrooms</strong> UX Design</li>
+                        <li>Observation et amélioration continue de mes propres projets</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>Sources consultées</h3>
+                    <ul style="margin-left: 1.2rem; line-height: 2.1;" class="v-srclist">
+                        <li><a href="https://www.youtube.com/@grafikart-fr" target="_blank" rel="noopener">Grafikart –
+                                Chaîne YouTube développement web & UI/UX</a></li>
+                        <li><a href="https://www.nngroup.com/articles/ux-research-cheat-sheet/" target="_blank"
+                                rel="noopener">Nielsen Norman Group – UX Research</a></li>
+                        <li><a href="https://openclassrooms.com/fr/courses/3013856-ux-design-decouvrez-les-fondamentaux"
+                                target="_blank" rel="noopener">OpenClassrooms – Fondamentaux UX</a></li>
+                        <li><a href="https://www.smashingmagazine.com/category/ux-design/" target="_blank"
+                                rel="noopener">Smashing Magazine – UX Design</a></li>
+                        <li><a href="https://developer.mozilla.org/fr/docs/Web/Accessibility" target="_blank"
+                                rel="noopener">MDN – Accessibilité web</a></li>
+                        <li><a href="https://www.ux-republic.com/les-10-heuristiques-de-jakob-nielsen/" target="_blank"
+                                rel="noopener">UX Republic – Les 10 heuristiques de Nielsen</a></li>
+                        <li><a href="https://www.alsacreations.com/article/lire/1659-UX-UI-differences.html"
+                                target="_blank" rel="noopener">Alsacréations – UX vs UI : quelles différences ?</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="info-card" style="margin-bottom:1.2rem;">
+                <h3>Chronologie de ma veille</h3>
+                <ul class="timeline" style="margin-top:1rem;">
+                    <li>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Septembre 2024</div>
+                            <h4>Mise en place de la veille</h4>
+                            <p>Début du BTS SIO en alternance. Premiers visionnages de vidéos Grafikart sur les bonnes
+                                pratiques web et l'ergonomie des interfaces. Début de la collecte de ressources sur le
+                                sujet.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Juin 2025</div>
+                            <h4>Choix du thème de veille</h4>
+                            <p>Définition du sujet de ma veille technologique : l'UX et l'ergonomie dans les
+                                applications web et desktop. Ce choix fait suite à mes projets de développement où j'ai
+                                pris conscience de l'importance de l'expérience utilisateur.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Été 2025</div>
+                            <h4>Lecture : les 10 heuristiques de Nielsen</h4>
+                            <p>Découverte de l'article UX Republic sur les 10 heuristiques de Jakob Nielsen, principes
+                                fondamentaux pour évaluer l'ergonomie d'une interface. Application directe dans la
+                                conception de mes projets.</p>
+                            <a href="https://www.ux-republic.com/les-10-heuristiques-de-jakob-nielsen/" target="_blank"
+                                rel="noopener">Lire l'article →</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Octobre 2025</div>
+                            <h4>Fin de la formation OpenClassrooms – UX Design</h4>
+                            <p>Validation du cours "UX Design : découvrez les fondamentaux" sur OpenClassrooms.
+                                Formation complète couvrant la recherche utilisateur, le prototypage et les tests
+                                d'ergonomie.</p>
+                            <a href="https://openclassrooms.com/fr/courses/3013856-ux-design-decouvrez-les-fondamentaux"
+                                target="_blank" rel="noopener">Voir la formation →</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-content">
+                            <div class="timeline-date">Début 2026</div>
+                            <h4>Lecture : UX vs UI, quelles différences ?</h4>
+                            <p>Consultation de l'article Alsacréations distinguant clairement les notions d'UX et d'UI
+                                Design. Une lecture utile pour mieux cadrer ma veille et comprendre les responsabilités
+                                de chaque discipline.</p>
+                            <a href="https://www.alsacreations.com/article/lire/1659-UX-UI-differences.html"
+                                target="_blank" rel="noopener">Lire l'article →</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Conclusion -->
+            <div class="info-card">
+                <h3>Conclusion</h3>
+                <p>
+                    L'UX et l'ergonomie sont aujourd'hui des facteurs déterminants dans la réussite d'un projet
+                    logiciel.
+                    Une application bien conçue ne doit pas seulement fonctionner : elle doit être simple, efficace,
+                    accessible et agréable à utiliser. Cette veille m'a permis d'adopter une approche plus rigoureuse
+                    dans mes développements et de toujours placer l'utilisateur au centre de mes choix techniques.
+                </p>
+            </div>
+
         </section>
     </main>
 
     <footer>
         © 2026 Dupuis Xavier - BTS SIO SLAM |
-        <a href="mailto:dupuis.xavier@example.com">Mail</a> |
+        <a href="mailto:xavierdups@gmail.com">Mail</a> |
         <a href="https://www.linkedin.com/in/xavier-dupuis-659459205/" target="_blank" rel="noopener">LinkedIn</a> |
     </footer>
 
